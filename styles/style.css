@@ -1,6 +1,6 @@
 @font-face {
   font-family: partyFont;
-  src: url('/fonts/KGPartyOnTheRooftop.ttf');
+  src: url('../fonts/KGPartyOnTheRooftop.ttf');
 }
 
 * {
