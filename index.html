@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giphy Party!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="imgs/NovusTerraLogo.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Giphy Party!</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="shortcut icon" href="imgs/NovusTerraLogo.png" type="image/x-icon">
-</head>
-
-<body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.js"></script>
-<script src="scripts/app.js"></script>
-</body>
-
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-4 mb-4">
+        <span class="letter">G</span>
+        <span class="letter">i</span>
+        <span class="letter">p</span>
+        <span class="letter">h</span>
+        <span class="letter">y</span>
+        <span class="letter">P</span>
+        <span class="letter">a</span>
+        <span class="letter">r</span>
+        <span class="letter">t</span>
+        <span class="letter">y</span>
+        <span class="letter">!</span>
+      </h1>
+      <form
+        id="search-form"
+        class="form-inline d-flex justify-content-center mb-4"
+      >
+        <input
+          type="text"
+          id="search"
+          name="search"
+          placeholder="Enter a search term"
+          class="form-control mr-2"
+        />
+        <input
+          id="submit"
+          type="submit"
+          class="btn btn-secondary"
+          value="Search Giphy!"
+        />
+        <button id="remove" class="btn btn-danger ml-2">Remove Gifs</button>
+      </form>
+      <p class="status text-center"></p>
+      <div class="gif-gallery row"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
 </html>

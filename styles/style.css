@@ -1,3 +1,8 @@
+@font-face {
+  font-family: partyFont;
+  src: url('/fonts/KGPartyOnTheRooftop.ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,36 +13,21 @@ html {
   font-size: 16px;
 }
 
-/* Flex Styles */
-.f{
-  display: flex;
+body {
+  background-color: black;
 }
 
-.v{
-  align-items: center;
+h1 {
+  font-family: partyFont;
+  font-size: 5rem;
+  color: blue;
 }
 
-.h{
-  justify-content: center;
+.error {
+  color: red;
+  font-weight: bold;
 }
 
-.r{
-  flex-direction: row;
+.letter {
+  transition: color 500ms;
 }
-
-.c{
-  flex-direction: column;
-}
-
-.sa{
-  justify-content: space-around;
-}
-
-.sb{
-  justify-content: space-between;
-}
-
-.p{
-  padding: 10px;
-}
-
